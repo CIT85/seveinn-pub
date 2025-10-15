@@ -1,1 +1,1 @@
-# seveinn-pri
+# seveinn-pub
