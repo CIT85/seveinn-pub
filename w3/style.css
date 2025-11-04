@@ -1,0 +1,16 @@
+body {
+background-color: #223;
+margin: 10px;
+color: whitesmoke;
+border-color: black;
+}
+html {
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a:hover {
+    color: aqua;
+}
+a:visited {
+    color: blueviolet;
+}
