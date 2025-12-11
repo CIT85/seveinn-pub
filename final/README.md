@@ -59,3 +59,6 @@ I optimized images by resizing them for web use, adding `alt` text for accessibi
 - descriptive link text (no “click here”)
 
 ## Hero Image Design
+- I chose this image because when I think of a coffee lounge, I think of a warm cozy cabin vibe or something similar to that. I created this image from Chat Gtp and at first I had another picture but I decided to ultimately go with this one. The image appears in the index or home html due to it's heading like imagry. It seemed fitting to place it there. 
+
+
