@@ -57,3 +57,5 @@ I optimized images by resizing them for web use, adding `alt` text for accessibi
 - high-contrast color palette
 - keyboard-friendly navigation using standard <a> elements
 - descriptive link text (no “click here”)
+
+## Hero Image Design
