@@ -1,0 +1,632 @@
+
+
+/* Base Typography for all pages */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #633e11;
+}
+
+html, body {
+    background-color: #EAE8E0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings share common properties */
+h1, h2, h3, h4, h5 {
+    border: 3px solid #000;
+    padding: 1rem;
+    line-height: 1.2;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Individual heading adjustments */
+h1 {
+    background-color: #634832;
+    color: #ece0d1;
+    border-radius: 50%;
+    padding: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+h2 {
+    background-color: #4B3626; /* REPLACED */
+    color: #ece0d1;
+    border-radius: 1rem;
+    position: sticky;
+    top: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+}
+
+h3 {
+    background-color: #dbc1ac;
+    color: #000;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+h4 {
+    background-color: #4B3626; /* REPLACED */
+    color: #ece0d1;
+    border-radius: 1rem;
+    position: sticky;
+    top: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    z-index: 10;
+
+}
+
+/* Paragraphs, summary, details */
+p, summary, details {
+    padding: 1rem;
+    background-color: #633e11;
+    color: #c4a57f;
+}
+
+p {
+    border: 5px solid #000000;
+    border-radius: 1rem;
+    color: #fff;
+}
+
+p a:hover{
+    color: yellow
+}
+
+/* FLEXBOX – Navigation Menu */
+nav ul {
+    display: flex; /* Flexbox used to create a horizontal menu */
+    justify-content: space-evenly 100%; /* Evenly spaces menu items across the full width */
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+nav li {
+    flex: 1; /* Each nav item takes equal width */
+    text-align: center;
+    background-color: #dbc1ac;
+    border: 5px solid #000;
+    border-radius: 0.5rem;
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+}
+
+nav::after {
+    display: block;
+    clear: both;
+}
+
+/* Shared layout spacing */
+header, main, article, section, footer {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+}
+
+/* FLEXBOX – Footer Layout */
+/* sidenote: redo whole section to look nicer.
+flexbox was used to make the footer standout and look more cleaner and it helps with seeing more clearly on what I want to try and do*/
+ /* Flexbox used to layout footer items vertically */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    background-color: #4B3626;
+    padding: 1rem;
+    margin: 1rem;
+    border: 5px solid #000;
+}
+
+footer a {
+    color: #EAE8E0;
+    background-color: #c4a57f;
+    border: 3px solid #000;
+    padding: 0.3rem;
+    width: 10rem;
+    border-radius: 0.85rem;
+}
+
+footer p {
+    margin: 0;                  /* removes the centering issue */
+    width: 100%;
+    padding: 0.75rem 0;         /* clean spacing at top and bottom */
+    box-sizing: border-box;     /* clean sizing */
+}
+
+
+
+
+/* Float images */
+img {
+    display: block;
+    width: 100%;
+    float: center;
+    margin: 1rem auto 0;
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #38220f;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    margin-top: 0.5rem;
+    border: 5px solid #000;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+article::after {
+    display: block;
+    clear: both;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background-color: #4B3626;
+    color: #ece0d1;
+}
+
+th, td {
+    border: 2px solid #000;
+    padding: 1rem;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #4B3626; /* REPLACED */
+}
+
+tr:nth-child(odd) {
+    background-color: #4B3626;
+}
+
+th {
+    background-color: #ece0d1; /* WAS WHITE */
+    color: #110b03;
+}
+
+details {
+    background-color: #4B3626; /* REPLACED */
+    color: #ece0d1;
+}
+
+/* Lists */
+ul.styled-list {
+    list-style-type: square;
+    padding-left: 2rem;
+    color: #000;
+}
+
+ul.styled-list li {
+    margin-bottom: 0.5rem;
+    background-color: #e9d8ca;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+/* Columns */
+.info {
+    column-count: 6;
+    column-gap: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+/* GRID layout for clickable images */
+.image-buttons {
+    display: grid; /* Grid used for arranging images in a structured grid layout */
+    grid-template-columns: repeat(3, 1fr);  /* 3 equal-width columns */
+    gap: 2rem; /* Space between grid items */
+    justify-items: center; /* Centers items horizontally within each cell */
+}
+
+/* image button wrappers */
+.img-button {
+    position: relative;  /* Needed for positioning text overlay */
+    width: 150px;
+    height: 150px;
+    padding: 1rem;
+}
+
+/* Image */
+.img-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the container without stretching */
+    border: 3px solid #000;
+    border-radius: 0.5rem;
+} 
+
+.image-buttons h3 {
+    grid-column: 1 / -1; /* Span header across all columns in the grid */
+    background-color: #4B3626;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size:xx-large;
+  }
+  
+
+/* Text overlay */
+.img-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    color: #ece0d1;
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 0.3rem 0;
+    font-weight: bold;
+}
+
+.img-button:hover {
+    background-color: yellow;
+    
+}
+
+/* Links */
+ a {
+    color: #040000;
+    text-decoration: underline;
+    transition: color 0.3s;
+    
+}
+
+a:hover, a:focus {
+    color: gold;/* was white */
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ff3300; /* replaced lighter white */
+    font-weight: bolder;
+}
+
+/* Utility classes */
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-emphasis {
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+}
+
+/* Fixed back-to-top button */
+#back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #634832;
+    color: #ece0d1;
+    padding: 1rem;
+    border: 2px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Absolute positioned quote block */
+.quote {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 30%;
+    background-color: #dbc1ac;
+    color: #000;
+    padding: 1rem;
+    border: 2px solid #000;
+    border-radius: 0.5rem;
+    font-style: italic;
+}
+/* PUZZLES SECTION BASE STYLES */
+.puzzle {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* two equal columns: text + image */
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.puzzle img {
+    width: 100%;
+    height: auto;
+    border: 3px solid #000;
+    border-radius: 0.5rem;
+}
+
+.puzzle figcaption, .puzzle p {
+    margin: 0;
+    padding: 0.5rem;
+    background-color: #4B3626;
+    color: #ece0d1;
+    border-radius: 0.5rem;
+    border: 3px solid #000;
+}
+
+/* Alternate layout: image right, text left for even sections */
+.puzzle:nth-of-type(even) {
+    direction: rtl;
+}
+
+.puzzle:nth-of-type(even) img {
+    direction: ltr; /* keeps image normal */
+}
+
+.puzzle:nth-of-type(even) p {
+    direction: ltr; /* text normal */
+}
+
+/* Ensure links inside puzzles look good */
+.puzzle a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #dbc1ac;
+    color: #000;
+    border: 3px solid #000;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.puzzle a:hover {
+    background-color: #634832;
+    color: #ece0d1;
+}
+
+
+/* 
+   COLOR PALETTE SWATCHES
+ */
+   .color-swatch {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin: 1rem;
+    border: 3px solid #000;
+    border-radius: 0.5rem;
+    text-align: center;
+    vertical-align: top;
+    font-weight: bold;
+    line-height: 1.2rem;
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* PRIMARY — matches h1, nav, strong elements */
+.color-primary {
+    background-color: #634832; 
+    color: #ece0d1;
+}
+
+/* SECONDARY — replaced old #967259*/ 
+.color-secondary {
+    background-color: #ece0d1; 
+    color: #000;
+}
+
+/* ACCENT — matches h3, quote boxes, decorative areas */
+.color-accent {
+    background-color: #dbc1ac;
+    color: #000;
+}
+
+/* BACKGROUND — optional darkest layout background */
+.color-background {
+    background-color: #EAE8E0;
+    color: #000000;
+}
+
+/* HIGHLIGHT — matches paragraphs, h2/h4, tables, details */
+.color-highlight {
+    background-color: #4B3626;
+    color: #ece0d1;
+}
+
+/* SMALL MOBILE DEVICES - under 481px */
+@media (max-width: 480px) {
+    /* headers */
+    header h1 {
+        font-size: 2rem;
+        padding: 1rem;
+        width: 100%;
+    }
+    header h2, header h4 {
+        font-size: 1.25rem;
+        padding: 0.5rem;
+    }
+    /* navigation menu */
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+    nav li {
+        margin: 0.5rem 0;
+        flex: unset;
+        width: 100%;
+    }
+    .image-buttons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    main {
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    .puzzle {
+        grid-template-columns: 1fr; /* stack image + caption + text */
+        text-align: center;
+        direction: ltr;
+    }
+    .puzzle img {
+        margin: 0 auto;
+    }
+}
+
+/* SMALL SCREENS / Laptops (769px – 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .puzzle {
+        grid-template-columns: 1fr 1fr; /* 2 columns again */
+        gap: 1rem;
+        direction: ltr; /* even items not flipped */
+    }
+}
+
+/* TABLETS - 481px to 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+        padding: 1.5rem;
+    }
+    header h2, header h4 {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .image-buttons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    main {
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    .puzzle {
+        grid-template-columns: 1fr; /* stack for readability */
+        text-align: left;
+        direction: ltr;
+    }
+    .puzzle img {
+        margin: 0 auto;
+    }
+}
+ 
+
+/* DESKTOPS - 1025px to 1200px */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    header h1 {
+        font-size: 3.5rem;
+        padding: 2rem;
+    }
+    header h2, header h4 {
+        font-size: 2rem;
+        padding: 1.25rem;
+    }
+
+    nav ul {
+        justify-content: space-evenly;
+    }
+    .image-buttons {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem;
+    } 
+    .puzzle {
+        grid-template-columns: 1fr 1fr; /* maintain two-column layout */
+        gap: 2rem;
+    }
+}
+/* EXTRA LARGE SCREENS - 1201px and above */
+@media (min-width: 1201px) {
+    header h1 {
+        font-size: 4rem;
+        padding: 2.5rem;
+    }
+    header h2, header h4 {
+        font-size: 2rem;
+        padding: 1.5rem;
+        position: sticky;
+    }
+
+    nav ul {
+        justify-content: space-around;
+    }
+
+    .image-buttons {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        padding: 2.5rem;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2.5rem;
+    }
+    .puzzle {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+    .puzzle {
+        grid-template-columns: 1fr 1fr; /* maintain two-column layout */
+        gap: 2rem;
+    }
+}
+/* I had a bit of trouble with this but I liked the design so I kept it for now, will work more on it */

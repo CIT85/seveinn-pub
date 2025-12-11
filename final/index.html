@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The home page of the Chess Lounge.">
+    <meta name="author" content="Sevein Nieves">
+    <link rel="stylesheet" href="css/style.css">
+    <title>The Chess Lounge</title>
+    
+</head>
+<body>
+    <header>
+        <h1>The Chess Lounge</h1>
+        <hr>
+            <nav aria-label="Menu Navigation">
+                <h2>Everything About Chess</h2> 
+                    <ul>
+                        <li><a href="what_is_chess.html">What Is Chess?</a></li>
+                        <li><a href="studies.html">Studies</a></li>
+                        <li><a href="rankings.html">Rankings</a></li>
+                        <li><a href="site.html">Site</a></li>
+                        <li><a href="puzzle.html">Puzzles</a></li>
+                    </ul>
+                        <section id="info" class="image-buttons">
+                            <h3>Quick Links</h3>
+                            <a href="studies.html#study_sections" class="img-button">
+                                <span class="img-text">Openings</span>
+                                <img src="../final/img/single_pawn.png" alt="openings" width="150" height="150" loading="eager">
+                            </a>
+                            <a href="studies.html#tactics" class="img-button">
+                                <span class="img-text">Tactics</span>
+                                <img src="../final/img/middle_game.png" alt="middle_game" width="150" height="150" loading="eager">
+                            </a>
+                            <a href="studies.html#endgame" class="img-button">
+                                <span class="img-text">Endgame</span>
+                                <img src="../final/img/end_game.png" alt="end_game" width="150" height="150" loading="eager">
+                            </a> 
+                            <a href="rankings.html" class="img-button">
+                                <span class="img-text">Elo</span>
+                                <img src="../final/img/elo_ratings.png" alt="elo_ratings" width="150" height="150" loading="eager">
+                            </a>
+                            <a href="studies.html#learning_tips" class="img-button">
+                                <span class="img-text">Study</span>
+                                <img src="../final/img/learning_chess.png" alt="learning" width="150" height="150" loading="eager">
+                            </a>
+                            <a href="studies.html/#" class="img-button">
+                                <span class="img-text">Puzzles</span>
+                                <img src="../final/img/chess_puzzle.png" alt="puzzles" width="150" height="150" loading="eager">
+                            </a>
+                        </section>
+                    
+                    
+            </nav>
+    </header>
+    <main>
+        <article id="website_intro">
+        <h2>Why I Created This Website</h2>
+            <p>This project will help with learning/remembering two subjects with the emphasis on HTML.</p>
+            <figure>
+                <img src="../final/img/woman_teaching_chess.jpg" alt="Woman teaching class of chess." title="A Chess Lesson" width="800" height="550" loading="eager">
+                <figcaption><em>A chess lesson being taught by a teacher.</em></figcaption>
+            </figure>
+            <br>
+            <section>
+                <h3>What Is Chess?</h3>
+                <img src="../final/img/twomen_playingchess.jpg" alt="Two Men in a Crowd Playing Intense Match" title="Intense Match" width="800" height="550" loading="lazy">
+                <figure>
+                    <figcaption><em>An Example of A Chess Game.</em></figcaption>
+                    <p>
+                        One player plays as white, while the other plays as black. In order to win you must put the king in checkmate (or win by time if timed chess.)
+                    </p>
+                </figure>
+            </section>
+        </article>
+            <hr>
+            <article id="chess_level">
+                <h4>Chess Level Table</h4>
+                <figure>
+                    <img src="../final/img/chess_tournament.jpg" alt="Chess Tournament with Crowd" title="Chess Tournament" width="800" height="550" loading="lazy">
+                    <figcaption><em>Multiple matches being played in a chess tournament with a large crowd.</em></figcaption>
+                </figure>
+            <table>
+                <caption>Different Levels Of Chess</caption>
+                <thead>
+                    <tr>
+                        <th>Level</th>
+                        <th id="level" scope="col">Elo</th>
+                        <th scope="col">What to Learn</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Beginner</th>
+                        <td>100-800</td>
+                        <td>Basics & Openings</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Intermediate</th>
+                        <td>800-1300</td>
+                        <td>Middle Game, Tactics, Endgame</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tournament Player</th>
+                        <td>1400-1900</td>
+                        <td>Middle Game, Tactics, Endgame</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Master</th>
+                        <td>2000+</td>
+                        <td>Endgame & Tactics</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">These are the different levels of chess. There is much to know and learn when playing chess, it's simply not a game learned over night.</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <details>
+                <summary>
+                    If you played chess for 30 minutes a day, how much would it sum up to at the end of 1 Year?
+                </summary>
+                <p>It would sum up to <time datetime="PT10950M">10,950</time> minutes or <time datetime="PT182H">182</time> hours</p>
+            </details>
+        </article>
+        <section id="puzzles">
+            <h2>Puzzles</h2>
+        
+            <!-- Puzzle 1 -->
+            <section class="puzzle">
+                <figure>
+                    <img src="../final/img/puzzle_one.png" alt="Chess puzzle: find checkmate in 2 moves">
+                    <figcaption>Can you find checkmate?</figcaption>
+                </figure>
+                <p>Analyze the board carefully and try to deliver checkmate in two moves.</p>
+                <a href="puzzle.html">Try this puzzle</a>
+            </section>
+        
+            <!-- Puzzle 2 -->
+            <section class="puzzle">
+                <figure>
+                    <img src="../final/img/puzzle_one_answer.png" alt="Chess puzzle solution: checkmate in 2 moves">
+                    <figcaption>Checkmate solution revealed!</figcaption>
+                </figure>
+                <p>Review the moves and see how the checkmate unfolds. Learn the key tactics here.</p>
+                <a href="puzzle.html">Try this puzzle</a>
+            </section>
+        </section>
+          
+    </main>
+    <hr>
+    <footer>
+        <h3>Links & Info</h3>
+        <p>What I used for My Content</p> 
+        <a href="https://chatgpt.com" target="_blank">Chat GTP</a>
+        <p>Sections of the page</p>
+        <a href="site.html">Site</a>
+        <a href="#">Back To Top</a>
+        <a href="#website_intro">Website</a>
+        <a href="#chess_level">Chess Level</a>
+        <p>© 2025 The Chess Lounge Project</p>
+    </footer>
+    
+</body>
+</html>
