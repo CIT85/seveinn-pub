@@ -563,6 +563,16 @@ a:visited {
     .puzzle img {
         margin: 0 auto;
     }
+
+    .hero {
+        height: 250px;
+    }
+    .hero-caption h1 {
+        font-size: 1.5rem;
+    }
+    .hero-caption p.hero-subtitle {
+        font-size: 0.9rem;
+    }
 }
 
 /* SMALL SCREENS / Laptops (769px – 1024px) */
@@ -571,6 +581,15 @@ a:visited {
         grid-template-columns: 1fr 1fr; /* 2 columns again */
         gap: 1rem;
         direction: ltr; /* even items not flipped */
+    }
+    .hero {
+        height: 350px;
+    }
+    .hero-caption h1 {
+        font-size: 2.5rem;
+    }
+    .hero-caption p.hero-subtitle {
+        font-size: 1.1rem;
     }
 }
 
@@ -614,6 +633,16 @@ a:visited {
     .puzzle img {
         margin: 0 auto;
     }
+
+    .hero {
+        height: 300px;
+    }
+    .hero-caption h1 {
+        font-size: 2rem;
+    }
+    .hero-caption p.hero-subtitle {
+        font-size: 1rem;
+    }
 }
  
 
@@ -651,6 +680,16 @@ a:visited {
     .puzzle {
         grid-template-columns: 1fr 1fr; /* maintain two-column layout */
         gap: 2rem;
+    }
+
+    .hero {
+        height: 400px;
+    }
+    .hero-caption h1 {
+        font-size: 3rem;
+    }
+    .hero-caption p.hero-subtitle {
+        font-size: 1.3rem;
     }
 }
 /* EXTRA LARGE SCREENS - 1201px and above */
@@ -694,5 +733,14 @@ a:visited {
         grid-template-columns: 1fr 1fr; /* maintain two-column layout */
         gap: 2rem;
     }
+
+    .hero {
+        height: 450px;
+    }
+    .hero-caption h1 {
+        font-size: 3.5rem;
+    }
+    .hero-caption p.hero-subtitle {
+        font-size: 1.5rem;
+    }
 }
-/* I had a bit of trouble with this but I liked the design so I kept it for now, will work more on it */
